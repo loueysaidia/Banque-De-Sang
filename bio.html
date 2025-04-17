@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Registres</title>
+  <link rel="stylesheet" href="bio.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="active" id="serologie">Sérologie</li>
+      <li class="active" id="groupage">Groupage</li>
+      <li class="active" id="separation"> Séparation</li>
+      <li class="active" id="distribution">Distribution</li> 
+       </ul>
+  </nav>
+  <div class="seting">
+    <button id="settings-btn">⚙️</button>
+    <button id="logout-btn" style="display: none;">🚪 Déconnexion</button>
+  </div>
+
+  <section class="container-separation" id="container-separation" style="display:none ;">
+    
+    <h2>Registre séparation</h2><hr>
+    <button id="addBtn-separation">+ Ajouter</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>type de poche</th>
+          <th>poids</th>
+          <th>Type de composent</th>
+          <th>Date d’expiration</th>
+          <th>est distribué</th>
+          <th>Observation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-separation">
+       
+      </tbody>
+    </table>
+  </section>
+  <section class="container-serologie" id="container-serologie" style="display: none;">
+    
+    <h2>Registre sérologie</h2><hr>
+    <button id="addBtn-serologie">+ Ajouter</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>Ag Hbs</th>
+          <th>HCV</th>
+          <th>HIV</th>
+          <th>TPHA</th>
+          <th>AcHbc</th>
+          <th>Observation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-serologie">
+       
+      </tbody>
+    </table>
+  </section>
+  <section class="container-groupage" id="container-groupage" style="display: none;">
+    
+    <h2>Registre groupage</h2><hr>
+    <button id="addBtn-groupage">+ Ajouter</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>Gs+Rh</th>
+          <th>Simonin</th>
+          <th>Date de collection</th>
+          <th>Date d’expiration</th>
+          <th>est distribué</th>
+          <th>Observation</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-groupage">
+       
+      </tbody>
+    </table>
+  </section>
+  
+  <section class="container-distribution" id="container-distribution" style="display: none;">
+    
+    <h2>Registre distribution</h2><hr>
+    <button id="addBtn-distribution">+ Ajouter</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>N°</th>
+          <th>N° de poche</th>
+          <th>Gs"D"</th>
+          <th>resseveur</th>
+          <th>Age</th>
+          <th>Sexe</th>
+          <th>Etablis</th>
+          <th>Gs"M"</th>
+          <th>Nombre de poche</th>
+          <th>type de composant</th>
+          <th>Porteur</th>
+          <th>Medcin</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-distribution">
+       
+      </tbody>
+    </table>
+  </section>
+
+  <script src="bio.js"></script>
+</body>
+</html>
