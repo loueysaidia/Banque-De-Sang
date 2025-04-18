@@ -1,5 +1,4 @@
 
-
 let countsepar = 1;
 document.getElementById("addBtn-separation").addEventListener("click", () => {
     
@@ -14,7 +13,7 @@ document.getElementById("addBtn-separation").addEventListener("click", () => {
     <td><select>
        <option>CPS</option>
        <option>PFC</option>
-       <option>GS</option></select></td>
+       <option>CG</option></select></td>
     <td><input type="date"></td>
     <td><select>
     <option>Oui</option>
@@ -104,7 +103,12 @@ function editRow(btn) {
         <option value="O+">O+</option>
         <option value="O-">O-</option>
         </select></td>
-        <td><input type="text" placeholder="Simonin"></td>
+        <td><select>
+        <option>A</option>
+        <option>AB</option>
+        <option>B</option>
+        <option>O</option>
+        </select></td>
         <td><input type="date"></td>
         <td><input type="date"></td>
         <td><select>
@@ -161,7 +165,7 @@ let countDist=1;
        <td><select>
        <option>CPS</option>
        <option>PFC</option>
-       <option>GS</option></select></td>
+       <option>CG</option></select></td>
        <td><input type="text" placeholder="Nom et prénom"></td>
        <td><input type="text" placeholder="Nom et prénom"></td>
        <td><input type="Date"</td>
@@ -270,7 +274,6 @@ setting.addEventListener("click",()=>{
 deconnexion.addEventListener("click",()=>{
     window.location.href="login.html";
 })
-
 
 
 
