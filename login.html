@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banque de sang</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body id="body">
+  <div class="left-panel" id="left-panel">
+  <div>    
+    <br>
+    <br>
+    <h1>Bienvenue!</h1>
+    <br>
+    <br><br>
+    <br><br>
+    <p>Ensemble nous sauvons des vies</p>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+   <br><br>
+    <p style="font-size: 17px;">Hopital Elokbi</p>
+  </div>
+  </div>
+  <div class="right-panel">
+    <div class="form-container" id="form-container">
+     
+     
+      <form id="login-form">
+        <h1 style="color:#84150C;">Banque De sang</h1>
+        <br><br><br><br>
+        <h2 id="form-title" style="text-decoration: underline;">Se connecter</h2>
+        <br><br>
+        <div class="form-group">
+          <label for="username">Nom d’utilisateur</label>
+          <input type="text" id="username" placeholder="plus de 8 caractères et mettre un point entre nom et prénom" required />
+          <span class="icon-right">👤</span>
+        </div>
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" placeholder="Mot de passe" required />
+          <span class="icon-right">🔒</span>
+        </div><br>
+        <button type="submit">Se connecter</button>
+        <div class="switch">
+          <p id="toggle-text">Si vous n’avez pas de compte <a id="toggle-link">Inscrire</a></p>
+        </div>
+      </form>
+      <form id="register-form" style="display: none;">
+
+        <h2 style="text-decoration: underline;">S'inscrire</h2>
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Nom" required />
+          <span class="icon-right">👤</span>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" placeholder="Prénom" required />
+          <span class="icon-right">👤</span>
+        </div>
+        <div class="form-group">
+          <label for="username-register">Nom d’utilisateur</label>
+          <input type="text" id="username-register" placeholder="Nom d’utilisateur" required />
+          <span class="icon-right">👤</span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required />
+          <span class="icon-right">📨</span>
+        </div>
+        <div class="form-group">
+          <label for="password-register">Mot de passe</label>
+          <input type="password" id="password-register" placeholder="Mot de passe" required />
+          <span class="icon-right">🔒</span>
+        </div>
+        <button type="submit">S’inscrire</button>
+        <div class="switch" id="connect">
+          <p id="connect-text">Si vous avez un compte <a id="connect-link">Connexion</a></p>
+        </div>
+      </form>
+      
+      
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
