@@ -8,8 +8,11 @@
 </head>
 <body>
     <div class="left-panel">
-        <div class="tableau" id="tableau">📊 Tableau de bord</div>
-    <div class="statistiques" id="statistiques">📈 Les statistiques</div>
+     
+        <div class="tableau" id="tableau">      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M3 3v18h18v-2H5V3H3zm4 8h2v7H7v-7zm4-5h2v12h-2V6zm4 3h2v9h-2V9z"/></svg>
+          Tableau de bord</div>
+    <div class="statistiques" id="statistiques">      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2V4h-2v13zm4 0h2v-4h-2v4zm4 0h2v-2h-2v2z"/></svg>
+      Les statistiques</div>
     <div class="management" id="management"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="20" height="20" viewBox="0 0 24 24">
         <path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.2c-3.1 0-9.2 1.6-9.2 4.9v2.2h18.4v-2.2c0-3.3-6.1-4.9-9.2-4.9z"/>
       </svg>
@@ -20,7 +23,13 @@
           </svg>
           Compte biologistes
        </div>
+
+        <button id="logout-btn" style="display: block;"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+          <path d="M10 17l5-5-5-5v3H0v4h10v3zm12 4H12v-2h10V5H12V3h10c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2z"/>
+        </svg> Déconnexion</button>
+      
     </div>
+    
    <div class="right-panel-tableau" id="right-panel-tableau" style="display: none;">
         <h1> Banque De Sang</h1>
         <div class="card">
