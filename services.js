@@ -139,13 +139,16 @@ alert.innerHTML+=`<div class="alert-box">
  const table=document.getElementById("tableauBiologiste");
 let row=document.createElement("tr");
 row.innerHTML=`
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td readonly></td>
+    <td readonly></td>
+    <td readonly></td>
+    <td readonly></td>
+    <td readonly></td>
+    <td readonly></td>
+    <td><select id="Actif" disabled>
+    <option>Oui</option>
+    <option>Non</option>
+    </select></td>
     <td>
       <button onclick="editRow(this)">✏️</button>
       <button onclick="deleteRow(this)">❌</button>
@@ -158,18 +161,16 @@ function deleteRow(btn) {
   
   function editRow(btn) {
       const row = btn.closest("tr");
-      const inputs = row.querySelectorAll("input[type='text'], input[type='date']");
+        const select = row.querySelector("select");
       const isEditing = btn.textContent === "✏️";
       
       if (isEditing) {
-          inputs.forEach((input) => {
-          input.removeAttribute("readonly");
-          });
+          
+            select.removeAttribute("disabled");
+
           btn.textContent = "💾";
       } else {
-          inputs.forEach((input) => {
-          input.setAttribute("readonly", true);
-          });
+            select.setAttribute("disabled", true);
           btn.textContent = "✏️";
       }
       btn.style.backgroundColor = isEditing ? "lightgreen" : "white";
