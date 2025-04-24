@@ -7,7 +7,7 @@
 body{
     font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
     
-    background-color: #f4f4f4;
+    background-color: white;
     color: black;
 }
 
@@ -26,11 +26,9 @@ body{
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     color: rgba(122, 113, 113, 0.516);
     font-size: 1.2em;
-    text-align: center;
     font-weight: bold;
 }
 .right-panel-tableau{
@@ -62,19 +60,20 @@ body{
     position: fixed; 
 }
 .right-panel-management{
-    font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
-    margin-left: 25%;
-    padding: 20px;
-    width: 75%;
-    height: 100vh;
-    background: white;
-    transition: margin-left 0.3s ease;
-    overflow-y: auto;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    position: fixed; 
+  font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
+  margin-left: 25%;
+  padding: 20px;
+  width: 75%;
+  height: 100vh;
+  background: white;
+  transition: margin-left 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: fixed;;
 }
+
 .compteBio{
     font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
     margin-left: 25%;
@@ -87,6 +86,7 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
     position: fixed;
 }
 .tableau{
@@ -173,73 +173,74 @@ h1{
 }
 
 .box1 {
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
-    min-width: 180px;
+    min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left:10%;
     height: 90px;
-    margin-right: 150px;
-    margin-top: 70px;
+    margin-right: 20%;
+    margin-top: 20%;
   }
   .box2{
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
-    min-width: 180px;
+    min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left:10%;
     height: 90px;
-    margin-right: 150px;
-    margin-top: 70px;
+    margin-right: 20%;
+    margin-top: 20%;
   }
   .box3{
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
     min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left:10%;
     height: 90px;
-    margin-right: 150px;
-    margin-top: 70px;
+    margin-right: 20%;
+    margin-top: 20%;
   }
   .box4{
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
     min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left:70%;
     height: 90px;
-    margin-top: 70px;
+    margin-top: 20%;
   }
   .box5{
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
     min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left:70%;
     height: 90px;
-    margin-top: 70px;
+    margin-top: 20%;
   }
   .box6{
-    background: #f2f2f2;
+    background: rgb(247, 217, 160);
     padding: 20px;
     border-radius: 20px;
     min-width: 300px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-left:0;
+    margin-left: 70%;
+    
     height: 90px;
-    margin-top: 70px;
+    margin-top: 20%;
   }
 .stock{
     background-color: rgba(247,217, 160);
@@ -347,26 +348,25 @@ h1{
   }
 
   .form-group input {
-    width: 50%;
-    max-width: 300px;
+    width: 100%;
     padding: 10px;
     border: none;
     border-bottom: 1px solid #000;
     font-size: 16px;
-   margin-left: 300px;
+   margin-left: 0;
   }
 
   .form-group label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    margin-left: 300px;
+    margin-left: 0;
   }
 
   .icon-right {
     float: right;
     margin-top: -30px;
-    margin-right: 320px;
+    margin-right: 10px;
     opacity: 0.5;
 
   }
@@ -384,12 +384,6 @@ h1{
   }
   .creer:hover{
     background-color: #a2150C;
-    font-weight: bold;
-    transform: scale3d(1.04,1.09, 1.04);
-    transform-origin: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    transition: transform 0.6s ease-in-out;
     cursor: pointer;
   }
 
@@ -402,8 +396,8 @@ h1{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    color: black;
+    background-color: #a2150C;
+    color: white;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -414,9 +408,14 @@ h1{
   }
   
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #f2f2f2;
     padding: 8px;
     text-align: center;
+  }
+  td{
+    background-color: #f2f2f2;
+    color: black;
+    border: 1px solid  #84150C
   }
   
   h1{
@@ -427,5 +426,95 @@ h1{
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    font-weight: bold;
+  }
+  .icon-svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .left-panel button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
   }
   
+  .left-panel button {
+      background-color: #84150C;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .left-panel button:hover {
+      background-color: #a2150C;
+      transform: scale(1.05);
+  }
+  
+  .left-panel .bottom-buttons button svg {
+      margin-right: 10px;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      fill: white;
+  }
+   
+  .compteBio select {
+      width: 80%; /* Largeur ajustée pour s'intégrer à la page */
+      max-width: 400px;
+      padding: 12px;
+      font-size: 16px;
+      color: #84150C; /* Couleur principale de votre design */
+      background-color: #f9ebb7; /* Couleur de fond douce */
+      border: 2px solid #84150C; /* Bordure cohérente avec le thème */
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      margin: 15px auto; /* Centrer le champ */
+      display: block;
+      cursor: pointer;
+  }
+  
+
+  .compteBio select:hover, 
+  .compteBio select:focus {
+      border-color: #a2150C; /* Couleur plus foncée au survol */
+      box-shadow: 0 0 8px rgba(168, 21, 12, 0.5); /* Légère ombre */
+  }
+
+  .compteBio option {
+      font-size: 16px;
+      color: #84150C;
+      background-color: #f9ebb7;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .compteBio option:hover {
+      background-color: #f7d9a0; 
+  }
+  .compte-bio button {
+    background-color: #7a0e12;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+ .compte-bio button:hover {
+    background-color: #a21218;
+  }
