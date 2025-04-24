@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
+  }
+  body {
+display: flex;
+min-height: 100vh;
+overflow: hidden;
+font-family: "Arial Rounded MT Bold", "Arial", sans-serif;
+}
+
+.left-panel, .right-panel {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+transition: all 1s ease;
+}
+
+
+.left-panel {
+background: #84150C;
+width: 30%;
+color: white;
+text-align: center;
+animation: fadeIn 1.5s ease;
+font-size: 15px;
+animation: fadeIn 1.5s ease;
+}
+.left-panel h1 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+
+.right-panel {
+background: #fff;
+color: black;
+text-align: center;
+width: 70%;
+}
+
+.left-panel h1 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.left-panel p {
+font-size: 25px;
+}
+
+.form-container {
+width: 100%;
+max-width: 400px;
+animation: fadeIn 1.5s ease;
+}
+
+.form-container h2 {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.form-group {
+margin-bottom: 1rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+text-align: left;
+}
+
+.form-group input {
+width: 100%;
+padding: 0.75rem;
+border: 2x solid;
+border-color: #84150C;
+border-radius: 10px;
+}
+
+.form-group input:focus {
+outline: none;
+border-color: #84150C;
+}
+
+button {
+background: #84150C;
+color: white;
+border: none;
+padding: 0.75rem 2rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+button:hover {
+background: #84150C;
+}
+
+.switch {
+margin-top: 1rem;
+text-align: center;
+}
+
+.switch a {
+color: #a82323;
+text-decoration: none;
+font-weight: bold;
+cursor: pointer;
+}
+a:hover {
+    color: #7a0c0c;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.swapped .left-panel{
+background:#84150C;
+color: white;
+transform: translateX(240%);
+width: 30%;
+transition: transform 1s; 
+}
+
+.swapped .right-panel{
+background: white;
+color:  black;
+transform: translateX(-40%);
+width: 70%;
+transition: transform 1s; 
+}
+
+.swapped .form-container {
+width: 100%;
+max-width: 400px;
+animation: fadeIn 1.5s ease;
+}
+
+.swapped .form-container h2 {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.swapped .form-group {
+margin-bottom: 1rem;
+}
+
+.swapped .form-group label {
+display: block;
+margin-bottom: 0.5rem;
+}
+
+.swapped .form-group input {
+width: 100%;
+padding: 0.75rem;
+border: 2px solid #7a0c0c;
+border-radius: 5px;
+}
+
+.icon-right {
+  float: right;
+  margin-top: -35px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
